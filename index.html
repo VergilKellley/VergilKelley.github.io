@@ -1,112 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<meta >
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Vergil Kelley">
-	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
-	<title>New Site</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<title>Vergil Kelley Portfolio</title>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div id="branding">
-				<h1><span class="highlight" style="font-style: italic;">Kelley</span> Web Design</h1>
-			</div>
-			<nav>
-				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<li><a href="NewSiteAbout.html">About</a></li>
-					<!--<li><a href="NewSiteServices.html">Services</a></li>-->
-				</ul>
-			</nav>
-		</div>
-	</header>
 
-	<section id="showcase">
-		<div class="container" id="overlay">
-			<h1>Affordable Professional Web Design</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor.</p>
+	<!-- Navagation -->
+
+		<div class="container-fluid" id="nav">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg" >  						<!--<a class="navbar-brand" href="#">About Me</a>-->
+ 						 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   							 <span class="navbar-toggler-icon"></span>
+ 						 </button>
+  							<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    							<ul class="navbar-nav">
+      								<li class="nav-item active">
+        							<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+      								</li>
+
+      								<li class="nav-item">
+        								<a class="nav-link" href="#portfolio">Portfolio</a>
+      								</li>
+
+      								<li class="nav-item">
+        								<a class="nav-link" href="https://github.com/VergilKellley" target="_blank">GitHub</a>
+      								</li>
+
+      								<li class="nav-item">
+        								<a class="nav-link" href="#resume">Resume</a>
+      								</li>
+
+      								<li class="nav-item">
+        								<a onclick="displayContactInfo()" href="#" class="nav-link">Contact</a>
+      								</li>
+    							</ul>
+  							</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<!-- landing page description -->
+		<div id="home"></div>
+	<section id="mid-section">
+		<div class="container-fluid" id="info">
+			<div class="row">
+				<div class="col-md-12" id="front-end">
+					<p>Front-End Developer</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section id="newsletter">
-		<div class="container">
-			<h1>Subscribe To Our Newsletter</h1>
-			<form>
-			<input type="email" placeholder="Enter Email...">
-			<button type="submit" class="button_1">Subscribe</button>
-			</form>
+		<!-- Greetings section -->
+		<div class="container-fluid">
+			<div class="row">					
+				<div class="col-md-12">
+					<p id="about-me"><span style="color: #0cb52e;"> Greetings!</span> My name is Vergil and I create responsive websites. Based in Chicago Illinois I design and develop with <span style="color: #0cb52e; font-style: italic; text-decoration: underline; font-size: 35px"> passion!</span></p>
+				</div>
+			</div>
 		</div>
-	</section>
 
-	<section id="boxes">
-		<div class="container">
-			<div class="box">
-				<img src="../VergilKellley.github.io/img/html5.jpg">
-				<h3>HTML5 Markup</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore.</p>
+		<!-- Technical icons section -->
+		<div class="container-fluid" id="Skills">
+			<div class="row">
+
+				<div class="col-sm-1">
+				
+				</div>
+
+				<div class="col-sm-3">
+					<img src="../VergilKellley.github.io/img/html.png">
+				</div>
+
+				<div class="col-sm-3">
+					<img src="../VergilKellley.github.io/img/css33.JPG">
+				</div>
+
+				<div class="col-sm-3">
+					<img src="../VergilKellley.github.io/img/jss.png">
+				</div>
+
+				<div class="col-sm-1">
+				</div>
 			</div>
-			<div class="box">
-				<img src="../VergilKellley.github.io/img/css3.png">
-				<h3>CSS3 Styling</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore.</p>
-			</div>
-			<div class="box">
-				<img src="../VergilKellley.github.io/img/jss.png" style="height: 135px; width: 125px;">
-				<h3>JavaScript Interactive</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore.</p>
-			</div>
-			
-		</section>
+		</div>
 
-		<hr style="margin-top: 75px;">
-
-		<h1 id="projects">Some of my projects</h1>
-
-		<section class="wrap">
+						<div id="contact-info" onclick="closeContactBox();" class="animated fadeIn ">
+							<p id="close-contact-box" >x</p>
+								<div id="phone-email">
+									<p style="font-size: 30px;">Vergil Kelley</p>
+									<p>(708)973-9694</p>
+									<p >Email: verg_1@yahoo.com</p>
+								</div>
+						</div>
+	
+		<!-- Portfolio section -->
+		<div id="portfolio"></div>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="container-fluid">
+			<dir class="row">
+				<div class="col-md-3 col-lg-6" >
 					<div class="title">
 						<h3 id="hongNgu">Hong Ngu</h3>
-						<p>Hong Ngu is a restaurant offering Vietnamese "Street Food" Opening soon in Chicago's Uptown Neighborhood. Created with HTML5, CSS3, Bootstrap 4 and JavaScript.</p><br><br>
+						<p>Hong Ngu is a restaurant offering Vietnamese "Street Food" Opening soon in Chicago's Uptown Neighborhood. Created with HTML5, CSS3, Bootstrap 4 and JavaScript.<br> <br><br>
 
 						<a href="https://vergilkellley.github.io/Hong-Ngu/" target="_blank"><img class="screen-shot" src="../VergilKellley.github.io/img/hongnguSplash.PNG"></a>
-						</p>
 					</div>
+				</div>
+
+				<div class="col-md-3 col-lg-6">
 					<div class="title">
 						<h3>Pomp-N-Strut</h3>
 						<p>Locally owned and operated Pomp-N-Strut, has been a premier dog grooming facility on Chicago's Southwest Side for over 20 years.</p><br><br>
 						<img class="screen-shot" src="../VergilKellley.github.io/img/PompNstrut-screen-shot.PNG">
 					</div>
-				</section>
+				</div>
+			</dir>
+		</div>
 
-				<section class="wrap">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-lg-6">
 					<div class="title">
 						<h3>Dj PoLo</h3>
 						<p>Meet Dj PoLo, when he's not spinning Latin grooves like Bachata, Merenge and Salsa you can find him.....</p>
-						<img class="screen-shot" src="../VergilKellley.github.io/img/Dj-screen-shot.PNG">
+						<img class="screen-shot" src="../VergilKellley.github.io/img/dJ-screen-shot.PNG">
 					</div>
+				</div>
 
+				<div class="col-md-3 col-lg-6">
 					<div class="title">					
 						<h3>Superior Housekeeping</h3>
 						<p>Having company this weekend? Let Superior Housekeeping get things spic and span. Owner operated since 1988.</p>
 						<img class="screen-shot" src="../VergilKellley.github.io/img/SHK-screen-shot.PNG">
 					</div>
-				</section>
+				</div>
+			</div>
+		</div>
 
+		<!-- Resume section -->
+		<div id="resume"></div>
 
-	<footer>
-		<p><span style="font-style: italic;" >Kelley</span> Web Design, Copyright &copy; 2018</p>
-	</footer>
+		<div class="container-fluid" id="header-name">
+			<div class="row" >
+				<div class="col-sm-12">
+					<div id="header-border"></div>
+					<h1 id="myName">Vergil Kelley</h1>
+				</div>
+			</div>
+		</div>
+				
+		<div class="container-fluid" id="header-address">
+			<div class="row">
+				<div class="col-sm-12 address" style="font-size: 25px">
+					<p>(708)973-9694</p>
+					<p>verg_1@yahoo.com</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<hr>
+		<div class="container-fluid" id="professional-summary">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Professional Summary</h3>
+					<p>I am a native Chicagoan well trained, self-taught web developer that knows how to create and modify web content using responsive design techniques. Experienced in analyzing customer needs, working with teams using software for manipulating multimedia content and posess the capacity to learn and adapt in a fast paced environment.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="container-fluid" id="core-qualifications">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Technical Skills</h3>
+				</div>
+
+				<div class="col-sm-4">
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>PHP</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4">
+					<ul>
+						<li>Sublime</li>
+						<li>Wordpress</li>
+						<li>Windows 10</li>
+						<li>Git/GitHub</li>
+						<li>Bootstrap 4</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-sm-10">
+					<p id="experience">Experience</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid dates">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2017 - Present</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Front-end Web Developer</h4>
+					<h5>Freelance, Chicago Il </h5>
+					<p>Providing front-end web developement services by creating clean, precise browser-compatible code and using responsive frameworks such as Bootstrap and Wordpress templates for individuals and small businesses. Collaborating with end-users to find creative and innovative solutions to deliver superior websites.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2014 - Present</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Doorman</h4>
+					<h5>Burnham Park Plaza, Chicagi Il</h5>
+					<p>Opening the front doors politely and greeting residents and guests with cordial professional verbage. Announce guests, observe security cameras and maintain a general cleanliness in and around the front-desk and entry-way to the building.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2010 - 2013</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Food Delivery</h4>
+					<h5>Pizano's Pizza, Chicago Il</h5>
+					<p>Successfully navigating the Chicago downtown area to deliver food products in a timely fashion, ensuring freshness and overall quality while providing outstanding customer service.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2000 - 2009</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Real Estate Investor</h4>
+					<h5>Self employed, Chicago Il</h5>
+					<p>Buying, selling and leasing of residential single family and multi-unit properties in the Chicagoland area. Conducted market analysis of forclosed homes and marketed vacant units. Prepared rental agreements, ensuring accuracy and completion. Performed general property management functions including supervising construction crews. </p>
+				</div>
+		</div>
+		<hr>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					 <p id="education">Education</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>1998 - 2000</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Roosevelt University, Chicago Illnois</h4>
+					<p>Accounting and Business Management (6 credit hours)</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>1993 - 1996</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Northeastern Illinois University, Chicago Illinois</h4>
+					<p>Accounting and Business Management (84 credit hours)</p>
+				</div>
+			</div>
+		</div>
+
+		
+					<footer>
+						<p><span style="font-style: italic;" >Kelley</span> Web Design, Copyright &copy; 2018</p>
+					</footer>
+
+		<script>
+			
+			function displayContactInfo(){
+				document.getElementById('contact-info').style.display="block";
+			}
+
+			function closeContactBox(){
+				document.getElementById('contact-info').style.display='none';
+			}
+		</script>
+			
 </body>
+</html>
+
 
 	
