@@ -57,18 +57,6 @@ li a {
 	font-size: 55px;
 }
 
-/*#what-I-do {
-
-	position: relative;
-	top: 190px;
-	left: 10%;
-	width: 100%;
-	margin-right: 0px;
-	color:#fff;
-	text-decoration: underline;
-	text-decoration-color: #fff;
-}*/
-
 #about-me {
 	position: relative;
 	top: -130px;
@@ -191,7 +179,7 @@ h1#myName {
 
 footer p{
 	position: relative;
-	padding-top: 25px;
+	padding-top: 35px;
 	color: #fff;
 	text-align: center;
 	background-color: #1C2833; /*#e8491d;*/	
