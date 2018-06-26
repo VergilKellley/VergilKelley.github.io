@@ -182,9 +182,16 @@ h1#myName {
 
 footer p{
 	position: relative;
-	padding-top: 35px;
+	padding: 35px 0 35px 0;
 	color: #fff;
 	text-align: center;
-	background-color: #1C2833; /*#e8491d;*/	
+	background-color:#0cb52e;/*#1C2833;	*/
+	margin-bottom: 0;
 }
 
+footer{
+	position: absolute;
+	min-width: 100%;
+	left: 0;
+	margin-top: 20px;
+}
