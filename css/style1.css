@@ -33,9 +33,10 @@ li a {
 
 .title img.screen-shot {
 	position: relative;
-	height: 350px;
-	width: 420px;
+	/*height: 350px;*/
+	width: 100%;
 	border-radius: 15px;
+	margin-top: 50px;
 }
 
 #info{
@@ -44,13 +45,14 @@ li a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 70%;
+	height: 40%;
 	background-attachment: fixed;
+	top: 160px;
 
 }
 #front-end {
 	position:relative;
-	top: 190px;
+	top: 60px;
 	letter-spacing: 1.2rem;
 	color: #fff;
 	text-align: center;
@@ -59,7 +61,7 @@ li a {
 
 #about-me {
 	position: relative;
-	top: -130px;
+	top: 130px;
 	text-align: center;
 	width: 100%;
 	margin-right: 0px;
@@ -68,9 +70,10 @@ li a {
 
 }
 
-#skills {
+#skills, img {
+	position: relative;
 	text-align: center;
-	margin-left: 300px;
+	top: -50px;
 }
 
 #close-contact-box{
@@ -116,7 +119,7 @@ li a {
 	color: #000;
 	font-style: italic;
 	padding: 10px;
-	margin: 10px;
+	margin:10px;
 }
 
 /* If the screen size is 600px wide or less, hide the element */
