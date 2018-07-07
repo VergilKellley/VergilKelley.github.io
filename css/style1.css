@@ -45,14 +45,14 @@ li a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 40%;
+	height: 60%;
 	background-attachment: fixed;
 	top: 160px;
 
 }
 #front-end {
 	position:relative;
-	top: 60px;
+	top: 120px;
 	letter-spacing: 1.2rem;
 	color: #fff;
 	text-align: center;
