@@ -1,75 +1,395 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Practice JavaScript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Vergil Kelley">
+
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<title>Vergil Kelley Portfolio</title>
 </head>
+<body >
 
-		<style>
+	<!-- Navagation -->
 
-			body{
-				background-color: #000;
-			}
-			.square{
-				width: 30%;
-				padding-bottom: 30%;
-				margin: 1.66%;
-				float: left;
-				background-color: red;
-			}
+		<div class="container-fluid" id="nav">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg" >  						<!--<a class="navbar-brand" href="#">About Me</a>-->
+ 						 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   							 <span class="navbar-toggler-icon"></span>
+ 						 </button>
+  							<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    							<ul class="navbar-nav">
+      								<li class="nav-item active">
+        							<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+      								</li>
 
-			#container{
-				max-width: 600px;
-				margin:0 auto;
-			}
+      								<li class="nav-item">
+        								<a class="nav-link" href="#portfolio">Portfolio</a>
+      								</li>
 
-			h1, h3{
-				color: #fff;
-				text-align: center;
-			}
+      								<li class="nav-item">
+        								<a class="nav-link" href="https://github.com/VergilKellley" target="_blank">GitHub</a>
+      								</li>
 
-		</style>
-<body>
+      								<li class="nav-item">
+        								<a class="nav-link" href="#resume">Resume</a>
+      								</li>
 
-		<h1>Can you pick the right color?</h1>
-		<h3>Click the color that corresponds to the RGB number</h3>
-		<span id="colorDisplay">RGB </span>
-		<div id="container">
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
+      								<li class="nav-item">
+        								<a onclick="displayContactInfo()" href="#" class="nav-link">Contact</a>
+      								</li>
+    							</ul>
+  							</div>
+					</nav>
+				</div>
+			</div>
 		</div>
+
+		<!-- Greetings section -->
+		<div id="home"></div>
+		<div class="container-fluid">
+			<div class="row">					
+				<div class="col-md-12">
+					<p id="about-me"><span style="color: #0cb52e;"> Greetings!</span> My name is Vergil and I create responsive websites. Based in Chicago Illinois I design and develop with <span style="color: #0cb52e; font-style: italic; text-decoration: underline; font-size: 35px"> passion.</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<img src="">
+		</div>
+
+		<!-- landing page description -->
+		
+	<section id="mid-section">
+		<div class="container-fluid" id="info">
+			<div class="row">
+				<div class="col-md-12" id="front-end">
+					<p>Front-End Developer</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		
+
+		<!-- Technical icons section -->
+		<div class="container-fluid" id="Skills">
+			<div class="row">
+				<div class="col-md-12  text-center">
+					<img src="../VergilKellley.github.io/img/jscsshtml2.png"  class="img-fluid" alt="JSS CSS HTML image">
+				</div>
+			</div>
+		</div>
+						<!-- contact information -->
+						<div id="contact-info" onclick="closeContactBox();" class="animated fadeIn ">
+							<p id="close-contact-box" >x</p>
+								<div id="phone-email">
+									<p style="font-size: 30px;">Vergil Kelley</p>
+									<p>(708)973-9694</p>
+									<p >Email: verg_1@yahoo.com</p>
+								</div>
+						</div>
+	
+		<!-- Portfolio section -->
+		<div id="portfolio"></div>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="container-fluid portfolio-bgcolor">
+			<div class="row">
+				<div class="col-xs-3 col-lg-6" >
+					<div class="title">
+						<h3>Vergil Kelley's</h3>
+						<h3>Portfolio</h3>
+						<br>
+						<p>Welcome to my portfolio. These sites are responsive and hosted on GitHub Hages. This site was created using HTML5, CSS3 and Bootstrap 4.</p><br>
+
+						<a href=""><img class="screen-shot" src="../VergilKellley.github.io/img/portfolio.PNG"  class="img-fluid" alt="screen shot"></a>
+					</div>
+				</div>
+
+				<div class="col-xs-3 col-lg-6">
+					<div class="title">
+						<h3>Guaranteed Gutters</h3>
+						<br><br>
+						<p>Owner Operated, Guaranteed Gutters has been serving Chicago's northwest side for more than 10 years. Created with HTML5, CSS3, CSS Grid and Flexbox.</p><br><br>
+
+						<a href="https://vergilkellley.github.io/gutters2018/" target="_blank"><img class="screen-shot" src="../VergilKellley.github.io/img/gutters.PNG"  class="img-fluid" alt="guaranteed gutters home page"></a>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3 col-lg-6">
+					<div class="title">
+						<h3>Dj PoLo</h3>
+						<p>Site Under Construction</p>
+						<p>80% complete</p>
+						<p>Meet Dj PoLo, when he's not spinning Latin grooves like Bachata, Merengue and Salsa you can find him about town enjoying some of Chicago's finest Mexican restaurants. Created with HTML5, CSS3, Bootstrap 4 and Firebase.</p><br> 
+					
+						<img class="screen-shot" src="../VergilKellley.github.io/img/Dj-screen-shot.PNG"  class="img-fluid" alt="Dj PoLo image">
+					</div>
+				</div>
+
+				<div class="col-xs-3 col-lg-6">
+					<div class="title">
+						<h3>Small World</h3>
+						<p>Site Under Construction</p>
+						<p>65% complete</p>
+						<p>Small World is a travel blog dedicated to showcasing some of the worlds amazing cities. Our mission is to bring the world to the palm of your hand or desktop with amazing photos and videos. Created with HTML5, CSS3, JavaScript, PHP and SASS.</p><br>
+
+						<a href="https://vergilkellley.github.io/blog1/" target="_blank"><img class="screen-shot" src="../VergilKellley.github.io/img/small-world.PNG"  class="img-fluid" alt="eiffel tower paris france"></a>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-3 col-lg-6">
+					<div class="title" >
+						<h3>Pomp-N-Strut</h3>
+						<p>Site Under Construction</p>
+						<p>40% complete</p>
+						<p>Locally owned and operated Pomp-N-Strut, has been a premier dog grooming facility on Chicago's Southwest Side for over 20 years. Created with HTML5, CSS3, Bootstrap 4, PHP and JavaScript.</p><br><br>
+						<img class="screen-shot" src="../VergilKellley.github.io/img/PompNstrut-screen-shot.PNG"  class="img-fluid" alt="dog grooming image">
+					</div>
+				</div>
+
+				<div class="col-xs-3 col-lg-6">
+					<div class="title">					
+						<h3 id="hongNgu">Hong Ngu</h3>
+						<p>Site Under Construction</p>
+						<p>60% complete</p>
+						<p>Hong Ngu is a restaurant offering Vietnamese "Street Food". Opening soon in Chicago's Uptown Neighborhood. Created with HTML5, CSS3, Bootstrap 4 and JavaScript.</p><br><br>
+							
+						<a href="https://vergilkellley.github.io/Hong-Ngu/" target="_blank"><img class="screen-shot img-fluid" src="../VergilKellley.github.io/img/hongnguSplash.PNG" alt="Hong Ngu restaurant image"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+
+				<div class="col-xs-3 col-lg-6">
+					<div class="title">
+						<h3>Superior Housekeeping</h3>
+						<p>Site Under Construction</p>
+						<p>50% complete</p>
+						<p>Having company this weekend? Let Superior Housekeeping get things spic and span. Owner operated since 1988. Created with HTML5, CSS3, Bootstrap 4, JavaScript and PHP.</p><br><br>
+						<img class="screen-shot" src="../VergilKellley.github.io/img/SHK-screen-shot.PNG"  class="img-fluid" alt="Superior Housekeeping image">	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Resume section -->
+		<div id="resume"></div>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="container-fluid" id="header-name">
+			<div class="row" >
+				<div class="col-sm-12">
+					<div id="header-border"></div>
+					<h1 id="myName">Vergil Kelley</h1>
+				</div>
+			</div>
+		</div>
+				
+		<div class="container-fluid" id="header-address">
+			<div class="row">
+				<div class="col-sm-12 address" style="font-size: 25px">
+					<p>(708)973-9694</p>
+					<p>verg_1@yahoo.com</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<hr>
+		<div class="container-fluid" id="professional-summary">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Professional Summary</h3>
+					<p>I am a native Chicagoan well trained, self-taught web developer that knows how to create and modify web content using responsive design techniques. Experienced in analyzing customer needs, working with teams using software for manipulating multimedia content and possess the capacity to learn and adapt in a fast paced environment.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<!-- Resume Technical Skills section -->
+		<div class="container-fluid" id="core-qualifications">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Technical Skills</h3>
+				</div>
+
+				<div class="col-sm-4">
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>PHP</li>
+						<li>SASS</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4">
+					<ul>
+						<li>Atom</li>
+						<li>Bootstrap 4</li>
+						<li>Git/GitHub</li>
+						<li>Sublime</li>
+						<li>Wordpress</li>
+						<li>Windows 10</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- Resume Experience section -->
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-sm-10">
+					<p id="experience">Experience</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid dates">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2017 - Present</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Front-End Web Developer</h4>
+					<h5>Freelance, Chicago Il </h5>
+					<p>Providing front-end web development services to individuals and small businesses by creating clean, precise, browser-compatible, section 508 compliant code using responsive technologies like Bootstrap.  Collaborating with end-users to find creative and innovative solutions to deliver superior user interfaces and experiences.</p>
+				</div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2014 - Present</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Doorman</h4>
+					<h5>Burnham Park Plaza, Chicago Il</h5>
+					<p>Opening the front doors politely and greeting residents and guests with cordial professional verbiage. Announce guests, observe security cameras and maintain a general cleanliness in and around the front-desk and entry-way to the building.</p>
+				</div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2010 - 2013</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Food Delivery</h4>
+					<h5>Pizano's Pizza, Chicago Il</h5>
+					<p>Successfully navigating the Chicago downtown area to deliver food products in a timely fashion, ensuring freshness and overall quality while providing outstanding customer service.</p>
+				</div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<p>2000 - 2009</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Real Estate Investor</h4>
+					<h5>Self employed, Chicago Il</h5>
+					<p>Buying, selling and leasing of residential single family and multi-unit properties in the Chicagoland area. Conducted market analysis of foreclosed homes and marketed vacant units. Prepared rental agreements ensuring accuracy and completion. Performed general property management functions including supervising construction crews.</p>
+				</div>
+			</div>
+			<br>
+		
+		<hr>
+
+		<!-- Resume Education section -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					 <p id="education">Education</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>1998 - 2000</p>
+				</div>
+				
+
+
+				<div class="col-sm-10">
+					<h4>Roosevelt University, Chicago Illinois</h4>
+					<p>Accounting and Business Management (6 credit hours)</p>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<p>1993 - 1996</p>
+				</div>
+
+				<div class="col-sm-10">
+					<h4>Northeastern Illinois University, Chicago Illinois</h4>
+					<p>Accounting and Business Management (84 credit hours)</p>
+				</div>
+			</div>
+		</div>
+
+		
+					<footer style="padding: 0;">
+						<p><span style="font-style: italic;" >Kelley</span> Web Design, Copyright &copy; 2018</p>
+					</footer>
 
 		<script>
 			
-			var colors = [
-			"rgb(0, 155, 0)",
-			"rgb(155, 155, 0)",
-			"rgb(0, 155, 155)",
-			"rgb(155, 155, 155)",
-			"rgb(155, 0, 0)",
-			"rgb(0, 0, 155)"
-			];
-
-			var squares = document.querySelectorAll('.square');
-			var pickedColor = colors[3];
-
-			//loop through squares and add  initial color to squares
-
-			for (var i = 0; i < squares.length; i++){
-				squares[i].style.backgroundColor = colors[i];
-				
-				//add event listener on clicked square
-				squares[i].addEventListener('click' function(){
-					
-				});
-
+			function displayContactInfo(){
+				document.getElementById('contact-info').style.display="block";
 			}
 
+			function closeContactBox(){
+				document.getElementById('contact-info').style.display='none';
+			}
 		</script>
-
-
+			
 </body>
 </html>
+
+
+	
