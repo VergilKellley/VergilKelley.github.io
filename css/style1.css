@@ -195,3 +195,11 @@ footer{
 	left: 0;
 	margin-top: 20px;
 }
+
+/* media queries */
+@media (max-width: 500px){
+	#front-end{
+		font-size: 2rem;
+		margin-top: 3rem;
+	}
+}
