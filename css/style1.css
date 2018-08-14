@@ -37,6 +37,7 @@ li a {
 	width: 80%;
 	border-radius: 15px;
 	margin-top: 50px;
+	margin-right: 0;
 }
 
 #info{
@@ -113,6 +114,14 @@ li a {
 	top: 15rem;
 	left: 50%;
 }*/
+
+.container-fluid-p{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	/*margin-left:40px;*/
+
+}
 .title, h3 p{
 	position: relative;
 	text-align: center;
@@ -120,6 +129,16 @@ li a {
 	font-style: italic;
 	padding: 10px;
 	margin:10px;
+}
+
+button{
+	padding:0.5rem;
+	margin:10px;
+}
+
+button a{
+	text-decoration:none;
+	color: black;
 }
 
 /* If the screen size is 600px wide or less, hide the element */
