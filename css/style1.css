@@ -27,7 +27,11 @@
 }
 
 li a {
-	color: #fff;
+	color: #000;
+}
+
+li a:hover{
+	color:#fff;
 }
 
 
@@ -220,6 +224,16 @@ footer{
 	left: 0;
 	margin-top: 20px;
 }
+
+footer p a{
+	color: #000;
+}
+
+footer p a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
 
 /* media queries */
 @media (max-width: 500px){
