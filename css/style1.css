@@ -17,6 +17,7 @@
 	overflow-x: hidden;
 	z-index: 1;
 	background: #0cb52e; /*rgb(12, 181, 46,);*/
+	opacity: 0.9;
 }
 
 .navbar{
