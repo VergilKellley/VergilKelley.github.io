@@ -56,6 +56,10 @@ li a:hover{
 	top: 160px;
 
 }
+
+.img-fluid {
+	margin-top:200px;
+}
 #front-end {
 	position:relative;
 	top: 120px;
@@ -73,7 +77,6 @@ li a:hover{
 	margin-right: 0px;
 	font-size: 35px;
 	color: #666b67;
-
 }
 
 #skills, img {
