@@ -130,6 +130,10 @@ li a:hover{
 	/*margin-left:40px;*/
 
 }
+
+.title {
+	margin-top: 135px;
+}
 .title, h3 p{
 	position: relative;
 	text-align: center;
