@@ -5,6 +5,11 @@
 	font-family: sans-serif, helvetica;
 }
 
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
 #mid-section {
 
 	/*background-color: #02f3f7;*/
@@ -14,6 +19,7 @@
 #nav {
 	position: fixed;
 	padding: 0;
+	width: 100vw;
 	overflow-x: hidden;
 	z-index: 1;
 	background: #0cb52e; /*rgb(12, 181, 46,);*/
@@ -24,6 +30,7 @@
 	overflow-x: hidden;
 	height: 100px;
 	font-size: 20px;
+	width: 100vw;
 	/*background-color: #02f3f7;*/
 }
 
@@ -131,9 +138,6 @@ li a:hover{
 
 }
 
-.title h3 p button a img{
-	margin-bottom: 100px;
-}
 .title, h3 p{
 	position: relative;
 	text-align: center;
