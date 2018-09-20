@@ -221,6 +221,10 @@ h1#myName {
  	font-size: 2rem;
 }
 
+#img-outline {
+	border: 2px #c12828 solid;
+}
+
 footer p{
 	position: relative;
 	padding: 35px 0 35px 0;
