@@ -1,0 +1,17 @@
+main {
+	width: 500px;
+	height: 600px;
+}
+
+.contact-form, input, textarea {
+	display: block;
+	width: 400px;
+	height: 40px;
+	padding: 10px;
+}
+
+.contact-form button {
+	display: block;
+	width: 422px;
+	height: 40px;
+}

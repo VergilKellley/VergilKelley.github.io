@@ -124,12 +124,6 @@ li a:hover{
 	margin-bottom: 10px;
 }
 
-/*button {
-	position: relative;
-	top: 15rem;
-	left: 50%;
-}*/
-
 .container-fluid-p{
 	position: relative;
 	left: 50%;
@@ -158,9 +152,10 @@ button a{
 	color: #000;
 }
 
-button a:hover{
+a button:hover{
 	text-decoration: none;
 	color: #fff;
+	cursor: pointer;
 }
 
 /* If the screen size is 600px wide or less, hide the element */
