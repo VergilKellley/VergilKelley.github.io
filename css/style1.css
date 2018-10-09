@@ -76,13 +76,17 @@ li a:hover{
 	font-size: 55px;
 }
 
+#about-me span{
+	font-size: 35px;
+}
+
 #about-me {
 	position: relative;
 	top: 130px;
 	text-align: center;
 	width: 100%;
 	margin-right: 0px;
-	font-size: 35px;
+	font-size: 22px;
 	color: #666b67;
 }
 
