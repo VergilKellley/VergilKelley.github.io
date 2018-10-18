@@ -25,6 +25,12 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+	<style>
+		#fact{
+			display: none;
+		}
+	</style>
 	
 	<title>Vergil Kelley Portfolio</title>
 </head>
@@ -103,7 +109,76 @@
 				</div>
 			</div>
 		</div>
-						<!-- contact information -->
+
+		<button id="getText">Get Text</button>
+
+		<script>
+			document.getElementById('getText').addEventListener('click', getText);
+
+			function getText(){
+				fetch('sample.txt')
+				.then(function(res){
+					console.log(res);
+				})
+			}
+		</script>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<div class="card bg-primary text-white mt-5 p-4">
+						<h1>Number Facts</h1>
+						<p>Enter a number to get a random fact</p>
+						<input type="number" class="form-control form-control-lg" id="numberInput" placeholder="Enter any number...">
+						<div id="fact" class="card-body">
+							<h4 class="card-title">Number Fact</h4>
+							<p id="factText" class="card-text"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--	<script>
+			let fact = document.querySelector('#fact');
+			let factText = document.querySelector('#factText');
+
+			let numberInput = document.querySelector('#numberInput');
+			numberInput.addEventListener('input', getFactFetch);
+
+			/*function getFactAjax(){
+				let number = numberInput.value;
+
+				let xhr = new XMLHttpRequest();
+				xhr.open('GET', 'http://numbersapi.com/'+number);
+
+				xhr.onload = function(){
+					if(this.status == 200 && number != ''){
+						fact.style.display = 'block';
+						factText.innerText = this.responseText;
+					}
+				}
+
+				xhr.send();
+			}*/
+
+			function getFactFetch(){
+				let number = numberInput.value;
+
+				fetch('http://numbersapi.com/'+number)
+				.then(response => response.text())
+				.then(data => {
+					if(number != ''){
+						fact.style.display = 'block';
+						factText.innerText = data;
+					}
+
+				})
+				.catch(err => console.log(err));
+			}
+
+		</script>
+						 contact information -->
 						<div id="contact-info" onclick="closeContactBox();" class="animated fadeIn ">
 							<p id="close-contact-box" >x</p>
 								<div id="phone-email">
@@ -112,6 +187,7 @@
 									<p >Email: verg_1@yahoo.com</p>
 								</div>
 						</div>
+
 	
 		<!-- Portfolio section -->
 		<div id="portfolio"></div>
@@ -229,9 +305,9 @@
 
 		<!--<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-3 col-lg-6">
-					<div class="title" >
-						<h3>Pomp-N-Strut</h3>
+				<div class="col-md-6">
+					<div class="card" >
+						<h1>Number Facts</h1>
 						<p>Site Under Construction</p>
 						<p>40% complete</p>
 						<p>Locally owned and operated Pomp-N-Strut, has been a premier dog grooming facility on Chicago's Southwest Side for over 20 years. <span style="font-weight: bolder;">Created with:</span> HTML5, CSS3, Bootstrap 4, PHP and JavaScript.</p><br><br>
@@ -450,6 +526,8 @@
 					</footer>
 
 		<script>
+
+			
 
 			//Smooth scroll animation
 
