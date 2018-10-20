@@ -136,6 +136,11 @@ li a:hover{
 
 }
 
+.container{
+	margin-top: 70px;
+	margin-bottom: 270px;
+}
+
 .title, h3 p{
 	position: relative;
 	text-align: center;
