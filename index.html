@@ -19,6 +19,10 @@
       });
   </script>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   	<!---Bootstrap CDN---->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 
@@ -115,20 +119,29 @@
 			</div>
 		</div>
 
+		<!------ Current Weather ----->
+
 		<div id="weather"></div>
 		<div class="container" >
 			<div class="row" style="font-style: italic;">
 				<div class="col-md-6 mx-auto m-5">
 					<h2 >Current Weather</h2>
-					<p>Get current weather conditions in cities around the world. <span style="font-weight: bolder;">Made with:</span> HTML, CSS3, Bootstrap, JavaScript, jQuery, Ajax and OpenWeatherMap API's.</p>
+					<p>Get current weather conditions in cities around the world. <span style="font-weight: bolder;">Made with:</span> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Ajax and OpenWeatherMap API.</p>
+		
 					<input type="text" name="city" id="city" class="form-control" placeholder="Enter City Name">
-					<span id="error"></span>
-					<button id="submitWeather" class="form-group">Get Weather</button>
-					<div id="show"></div>
+
+					<div id="error"></div>
+
+
+					<button id="submitWeather">Get Weather</button>
+					<div  id="show"></div>
 				</div>
 			</div>
 		</div>
+		<!------------------End Current Weather------------------------->
 
+
+		<!------------------Random numbers facts coming soon---------->
 
 		<!--<button id="getText">Get Text</button>-->
 
@@ -159,7 +172,9 @@
 			</div>
 		</div>-->
 
-	<!--	<script>
+	
+
+		<!--<script>
 			let fact = document.querySelector('#fact');
 			let factText = document.querySelector('#factText');
 
@@ -197,8 +212,11 @@
 				.catch(err => console.log(err));
 			}
 
-		</script>
-						 contact information -->
+		</script>  ----------end random numbers facts coming soon
+
+
+						 <--------contact information -->
+
 						<div id="contact-info" onclick="closeContactBox();" class="animated fadeIn ">
 							<p id="close-contact-box" >x</p>
 								<div id="phone-email">
@@ -545,86 +563,7 @@
 						<p><a href="https://vergilkellley.github.io"><span style="font-style: italic;" > Vergil Kelley</span> Web Design & Development Copyright &copy; 2018</p></a>
 					</footer>
 
-					<script>
-
-						$(document).ready(function(){
-
-	$('#submitWeather').click(function(){
-
-		var city = $('#city').val();
-
-		if(city != ''){
-
-			$.ajax({
-
-					url: 'http://api.openweathermap.org/data/2.5/weather?q=' +city+ '&units=imperial' + '&APPID=d2032e58f9c4ad9419826cd0fe298077',
-					type:"GET",
-					dataType:"jsonp",
-					success: function(data){
-						console.log(data);
-
-							var widget = show(data);
-
-							$("#show").html(widget);
-
-							$('#city').val('');
-
-					}
-				});
-
-		} else {
-			$("#error").html('Field cannot be empty');
-
-		}
-	});
-
-});
-
-	function show(data){
-
-		return "<h2>Current Weather for: "+data.name+", "+data.sys.country+"		</h2>"+
-				"<h3><strong>Weather</strong>: "+data.weather[0].main+"</h3>"+
-				"<h3><strong>Description</strong>: "+data.weather[0].description+"<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>" + "</h3>"+
-				"<h3><strong>Temperature</strong>: "+data.main.temp+"&#8457</h3>"+
-				/*"<h3><strong>Pressure</strong>: "+data.main.pressure+"</h3>"+*/
-				"<h3><strong>Humidity</strong>: "+data.main.humidity+"%"+"</h3>"+
-				"<h3><strong>High Temperature</strong>: "+data.main.temp_max+"&#8457</h3>"+
-				"<h3><strong>Low Temperature</strong>: "+data.main.temp_min+"&#8457</h3>"+
-				"<h3><strong>Wind Speed</strong>: "+data.wind.speed+" MPH</h3>"
-				/*"<h3><strong>Wind Direction</strong>: "+data.wind.deg+"&deg</h3>"*/;
-
-
-	}
-
-			//Smooth scroll animation
-
-			$(function(){
-			// smooth scrolling effect
-			$('a[href*="#"]:not([href="#"])').click(function(){
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html, body').animate({
-							scrollTop: target.offset().top
-					}, 1000);
-						return false;
-				}
-			}
-		});
-	});
-
-
-			//Display contact info box
-			function displayContactInfo(){
-				document.getElementById('contact-info').style.display="block";
-			}
-
-			//Close contact info box
-			function closeContactBox(){
-				document.getElementById('contact-info').style.display='none';
-			}
-		</script>
+					<script type="text/javascript" src="weather.js"></script>
 			
 </body>
 </html>
