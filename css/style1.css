@@ -35,11 +35,11 @@ body {
 }
 
 li a {
-	color: #000;
+	color: #fff;
 }
 
 li a:hover{
-	color:#fff;
+	color:#000;
 }
 
 
@@ -141,6 +141,19 @@ li a:hover{
 	margin-bottom: 270px;
 }
 
+#submitWeather{
+	margin-left: -1px;
+	border-radius: 5px;
+	border:none;
+}
+
+#submitWeather:hover{
+	cursor: pointer;
+	color: #000;
+	opacity: .5;
+	border:none;
+}
+
 .title, h3 p{
 	position: relative;
 	text-align: center;
@@ -154,6 +167,8 @@ button{
 	padding:0.5rem;
 	margin:10px;
 	background-color: #0cb52e;
+	color: #fff;
+	border:none;
 }
 
 button a{
@@ -163,8 +178,9 @@ button a{
 
 a button:hover{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	cursor: pointer;
+	opacity: .5;
 }
 
 /* If the screen size is 600px wide or less, hide the element */
@@ -247,11 +263,11 @@ footer{
 }
 
 footer p a{
-	color: #000;
+	color: #fff;
 }
 
 footer p a:hover{
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 
